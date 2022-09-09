@@ -15,14 +15,17 @@
     var myChart = new Chart(ctx, {
         type: 'doughnut',
         data: {
-            labels: ['Red', 'Blue', 'Yellow'],
+            labels: ['Blue', 'Yellow', 'Red', 'Green', 'Teal', 'Dark Red'],
             datasets: [{
                 label:'My First Doughnut Today',
-                data:[300, 50, 200],
+                data:[300, 50, 200, 250, 400],
                 backgroundColor:[
-                    'rgb(255, 99, 150)',
                     'rgb(50, 150, 240)',
-                    'rgb(255, 200, 80)'
+                    'rgb(255, 200, 80)',
+                    'rgb(255, 99, 150)',
+                    'rgb(204, 255, 204)',
+                    'rgb(51, 204, 204)',
+                    'rgb(153, 51, 102)'
                 ],
             }]
         }
@@ -36,20 +39,24 @@
     var myChart = new Chart(ctx, {
         type: 'pie',
         data: {
-            labels: ['Red', 'Blue', 'Yellow'],
+            labels: ['Red', 'Blue', 'Red', 'Yellow', 'Green', 'Teal'],
             datasets: [{
                 label:'My First Doughnut Today',
-                data:[300, 50, 200],
+                data:[300, 50, 200, 350, 100],
                 backgroundColor:[
-                    'rgb(255, 99, 150)',
+                    'rgb(153, 51, 102)',
                     'rgb(50, 150, 240)',
-                    'rgb(255, 200, 80)'
+                    'rgb(255, 99, 150)',
+                    'rgb(255, 200, 80)',
+                    'rgb(204, 255, 204)',
+                    'rgb(51, 204, 204)'
+
                 ],
             }]
         }
     })
 </script>
-<div style='width: 200px'>
+<div style='width: 230px'>
     <canvas id='myChart3'></canvas>
 </div>
 <script>
@@ -58,17 +65,20 @@
         type: 'polarArea',
         data: {
             labels: [
-                'Red', 'Green', 'Yellow', 'Grey', 'Blue'
+                'Green', 'Red', 'Yellow', 'White', 'Blue', 'lightGreen', 'Teal', 'Dark Red'
             ],
             datasets: [{
                 label:'Polar Area Chart',
-                data:[11, 10, 15, 3, 2],
+                data:[11, 10, 15, 3, 2, 7, 9, 13],
                 backgroundColor:[
-                    'rgb(255, 100, 130)',
                     'rgb(80, 190, 190)',
+                    'rgb(255, 100, 130)',
                     'rgb(255, 200, 85)',
                     'rgb(201, 203, 203)',
                     'rgb(50, 160, 240)',
+                    'rgb(204, 255, 204)',
+                    'rgb(51, 204, 204)',
+                    'rgb(153, 51, 102)'
                 ]
             }]
         },
